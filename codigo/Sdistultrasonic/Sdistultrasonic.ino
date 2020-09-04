@@ -73,19 +73,21 @@ Inicio funcion loop
 void loop()
 {
   float distancia = 0.01723 * readUltrasonicDistance(2, 2);
-
+// aqui se enciende el led rojo 
   if((distancia <= 336) && (distancia >= 200)) {
     digitalWrite(redPin, HIGH);
   } 
   else {
     digitalWrite(redPin, LOW); 
   }
-  if((distancia < 200) && (distancia >= 100)) {
+  //se enciende led amarillo
+  if((distancia < 200) && (distancia >= 50)) {
     digitalWrite(yellowPin, HIGH);
   } 
   else {
     digitalWrite(yellowPin,LOW); 
   }
+  //se enciende led verde 
   if(distancia < 100) {
     digitalWrite(greenPin, HIGH);
   } 
