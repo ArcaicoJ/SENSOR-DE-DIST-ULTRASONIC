@@ -94,11 +94,7 @@ void loop()
   else {
     digitalWrite(greenPin, LOW); 
   }  
-  /*SE COMPARA MONITOR SERIE CON VALOR VISUAL DEL SENSOR SUS RANGO*/
-  //Serial.print("distancia: "); //IMPRIMIR EN MONITOR SERIE
-  //Serial.println(distancia+1.8); // IMPRIME VALOR DE DISTANCIA 
-  //delay(10); // Delay a little bit to improve simulation performance
-}
+
 /*
 Inicio funcion loop
 */
